@@ -1,0 +1,97 @@
+{
+    "Flash Sales": {
+      "metadata": {
+        "metrics": ["TY Sales Quantity, TY Sales Amount, TY Profit Amount, LY Sales Quantity, LY Sales Amount, LY Profit Amount"],
+        "attributes": ["department"],
+        "filter":{
+          "year":"2021",
+          "store":"365"
+        }
+      },
+      "permission": {
+        "roles": [],
+        "users": []
+      }
+    },
+    "Store Daily Sales and Profit": {
+      "metadata": {
+        "metrics": ["BOH", "Sales Quantity", "Sales Amount", "EOH", "Profit Amount"],
+        "attributes": ["department"],
+        "filter": {
+          "day": "yesterday"
+        }
+      },
+      "permission": {
+        "roles": [],
+        "users": []
+      }
+    },
+    "Inventory Movement": {
+      "metadata": {
+        "metrics": ["BOH", "EOH","Sales Quantity", "Inventory Received Quantity", "RTV Quantity", "Inventory Transfer"],
+        "attributes": ["department"],
+        "filter":{
+          "year":"2021",
+          "store":"365"
+        }
+      },
+      "permission": {
+        "roles": [],
+        "users": []
+      }
+    },
+    "Inventory Status": {
+      "metadata":{
+        "metrics":["EOH","BOH","sales"],
+        "attributes":["department"],
+        "filter":{
+          "year":"2021",
+          "store":"365"
+        }
+      }
+    },
+    "Types of Sales": {
+      "metadata":{
+        "metrics":["LY Profit", "TY Profit"],
+        "attributes":["department"]
+      }
+    },
+    "Markdowns":{
+      "metadata":{
+        "metrics":["markdowns", "sales", "Markdown Cancels", "markups"],
+        "attributes":["department"]
+      }
+    },
+    "Inventory Adjustments":{
+        "metadata":{
+          "metrics":["EOH","BOH","Sales Quantity", "Inventory Transfer","RTV Quantity","Inventory Received Quantity"],
+          "attributes":["department"],
+          "filter":{
+          "year":"2021",
+          "store":"365"
+        }
+      }
+    },
+    "Transfer Summary": {
+      "metadata": {
+        "metrics": ["Transfer In Qty", "Transfer In Cost", "Transfer In Retail", "Transfer Out Qty", "Transfer Out Cost", "Transfer Out Retail"],
+        "attributes": ["class"],
+        "filter": {
+        }
+      },
+      "permission": {
+        "roles": [],
+        "users": []
+      }
+    },
+    
+    "Stock Markdowns by Department": {
+      "metadata": {
+        "metrics": ["Markups", "Markdowns"],
+        "attributes": ["class"],
+        "filter": {
+        }
+      }
+    }
+  
+  }
